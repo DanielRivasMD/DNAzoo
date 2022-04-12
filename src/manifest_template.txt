@@ -1,0 +1,101 @@
+
+Manifest fields for 'genome' context:
+
+┌────────────────────┬───────────┬─────────────────────────────────────────────┐
+│Field               │Cardinality│Description                                  │
+├────────────────────┼───────────┼─────────────────────────────────────────────┤
+│NAME (ASSEMBLYNAME) │Mandatory  │Unique genome assembly name                  │
+├────────────────────┼───────────┼─────────────────────────────────────────────┤
+│STUDY               │Mandatory  │Study accession or name                      │
+├────────────────────┼───────────┼─────────────────────────────────────────────┤
+│SAMPLE              │Mandatory  │Sample accession or name                     │
+├────────────────────┼───────────┼─────────────────────────────────────────────┤
+│ASSEMBLY_TYPE       │Mandatory  │Assembly type:                               │
+│                    │           │* clone or isolate                           │
+│                    │           │* primary metagenome                         │
+│                    │           │* binned metagenome                          │
+│                    │           │* Metagenome-Assembled Genome (MAG)          │
+│                    │           │* Environmental Single-Cell Amplified Genome │
+│                    │           │(SAG)                                        │
+│                    │           │* COVID-19 outbreak                          │
+│                    │           │* clinical isolate assembly                  │
+├────────────────────┼───────────┼─────────────────────────────────────────────┤
+│COVERAGE            │Mandatory  │Sequencing coverage                          │
+├────────────────────┼───────────┼─────────────────────────────────────────────┤
+│PROGRAM             │Mandatory  │Assembly program                             │
+├────────────────────┼───────────┼─────────────────────────────────────────────┤
+│PLATFORM            │Mandatory  │Sequencing platform                          │
+├────────────────────┼───────────┼─────────────────────────────────────────────┤
+│DESCRIPTION         │Optional   │Genome assembly description                  │
+├────────────────────┼───────────┼─────────────────────────────────────────────┤
+│MINGAPLENGTH        │Optional   │Minimum gap length                           │
+├────────────────────┼───────────┼─────────────────────────────────────────────┤
+│MOLECULETYPE        │Optional   │Molecule type:                               │
+│                    │           │* genomic DNA                                │
+│                    │           │* genomic RNA                                │
+│                    │           │* viral cRNA                                 │
+├────────────────────┼───────────┼─────────────────────────────────────────────┤
+│RUN_REF             │Optional   │Run accession or name as a comma-separated   │
+│                    │           │list                                         │
+├────────────────────┼───────────┼─────────────────────────────────────────────┤
+│ANALYSIS_REF        │Optional   │Analysis accession or name as a              │
+│                    │           │comma-separated list                         │
+├────────────────────┼───────────┼─────────────────────────────────────────────┤
+│TPA                 │Optional   │Third party annotation:                      │
+│                    │           │* yes                                        │
+│                    │           │* no                                         │
+│                    │           │* true                                       │
+│                    │           │* false                                      │
+│                    │           │* Y                                          │
+│                    │           │* N                                          │
+├────────────────────┼───────────┼─────────────────────────────────────────────┤
+│AUTHORS             │Optional   │For submission brokers only. Submitter's     │
+│                    │           │names as a comma-separated list              │
+├────────────────────┼───────────┼─────────────────────────────────────────────┤
+│ADDRESS             │Optional   │For submission brokers only. Submitter's     │
+│                    │           │address                                      │
+├────────────────────┼───────────┼─────────────────────────────────────────────┤
+│SUBMISSION_TOOL     │Optional   │Name of third-party or developed tool used to│
+│                    │           │submit to ENA                                │
+├────────────────────┼───────────┼─────────────────────────────────────────────┤
+│SUBMISSION_TOOL_VERS│Optional   │Version number of the third-party or         │
+│ION                 │           │developed tool used to submit to ENA         │
+├────────────────────┼───────────┼─────────────────────────────────────────────┤
+│FASTA               │0-1 files  │Fasta file                                   │
+├────────────────────┼───────────┼─────────────────────────────────────────────┤
+│FLATFILE            │0-1 files  │Flat file                                    │
+├────────────────────┼───────────┼─────────────────────────────────────────────┤
+│AGP                 │0-1 files  │AGP file                                     │
+├────────────────────┼───────────┼─────────────────────────────────────────────┤
+│CHROMOSOME_LIST     │0-1 files  │Chromosome list file                         │
+├────────────────────┼───────────┼─────────────────────────────────────────────┤
+│UNLOCALISED_LIST    │0-1 files  │Unlocalised sequence list file               │
+└────────────────────┴───────────┴─────────────────────────────────────────────┘
+
+Data files for 'genome' context:
+
+┌──────────────────────────────┬────────┬────────┬────────┬────────┬────────┐
+│Data files                    │FASTA   │FLATFILE│AGP     │CHROMOSO│UNLOCALI│
+│                              │        │        │        │ME_LIST │SED_LIST│
+├──────────────────────────────┼────────┼────────┼────────┼────────┼────────┤
+│Sequences in an annotated flat│        │1       │0-1     │        │        │
+│file. An optional AGP file.   │        │        │        │        │        │
+├──────────────────────────────┼────────┼────────┼────────┼────────┼────────┤
+│Sequences in a fasta file. No │1       │0-1     │0-1     │        │        │
+│chromosomes. An optional AGP  │        │        │        │        │        │
+│file and an optional annotated│        │        │        │        │        │
+│flat file.                    │        │        │        │        │        │
+├──────────────────────────────┼────────┼────────┼────────┼────────┼────────┤
+│Sequences in an annotated flat│        │1       │0-1     │1       │0-1     │
+│file. A list of chromosomes.  │        │        │        │        │        │
+│An optional AGP file and an   │        │        │        │        │        │
+│optional list of unlocalised  │        │        │        │        │        │
+│sequences.                    │        │        │        │        │        │
+├──────────────────────────────┼────────┼────────┼────────┼────────┼────────┤
+│Sequences in a fasta file. A  │1       │0-1     │0-1     │1       │0-1     │
+│list of chromosomes. An       │        │        │        │        │        │
+│optional AGP file, an optional│        │        │        │        │        │
+│annotated flat file and an    │        │        │        │        │        │
+│optional list of unlocalised  │        │        │        │        │        │
+│sequences.                    │        │        │        │        │        │
+└──────────────────────────────┴────────┴────────┴────────┴────────┴────────┘
