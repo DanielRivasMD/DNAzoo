@@ -3,3 +3,7 @@ data/
 
 # accounts
 doc/accounts.txt
+
+# conceil password
+uploads/.password.txt
+src/ENApassword.sh
