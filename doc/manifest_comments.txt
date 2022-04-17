@@ -1,0 +1,61 @@
+####################################################################################################
+
+account details: thednazoo@gmail.com => primary email address. olga.dudchenko@bcm.edu => secondary
+NCBI reference registration page: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA512907
+
+####################################################################################################
+
+NAME: chromlengthAssembly -> name from README.json
+
+STUDY: register on ENA. NCBI bioproject: DNA Zoo BioProject Accession: PRJNA512907 ID: 512907
+
+SAMPLE: The samples associated with the assembly are usually registered on SRA (submitted to SRA under sampleIDs listed in the README).
+e.g. for Macropus eugenii: https://www.ncbi.nlm.nih.gov/biosample/SAMN10973727, corresponding ENA records https://www.ebi.ac.uk/ena/browser/view/SAMN10973727
+
+ASSEMBLY_TYPE: isolate
+
+COVERAGE: calculate from raw data
+submitted to SRA (submitted to SRA under sampleIDs listed in the README).
+e.g. for Macropus eugenii: https://www.ncbi.nlm.nih.gov/sra/SRX5415842[accn], https://www.ncbi.nlm.nih.gov/sra/SRX5415843[accn], similar corresponding ENA records exist.
+
+PROGRAM: [w2rap (Clavijo et al., 2017) if reference to Clavijo et al., 2017 exists in the draftAssembly -> reference section,] Juicer (Durand, Shamim et al., 2016), 3D-DNA (Dudchenko et al., 2017), Juicebox Assembly Tools (Dudchenko et al., 2018)
+
+PLATFORM: from README.json
+
+DESCRIPTION: "see www.dnazoo.org/methods for details"
+
+MINGAPLENGTH: calculate from the fasta
+
+MOLECULETYPE: genomic DNA
+
+RUN_REF: raw data
+submitted to SRA (submitted to SRA under sampleIDs listed in the README).
+e.g. for Macropus eugenii: https://www.ncbi.nlm.nih.gov/sra/SRX5415842[accn], https://www.ncbi.nlm.nih.gov/sra/SRX5415843[accn], similar corresponding ENA records exist
+
+ANALYSIS_REF:  ?
+
+TPA:
+yes
+if files like me-1k.fasta_v2.functional.gff3.gz, me-1k.fasta_v2.functional.proteins.fasta.gz, me-1k.fasta_v2.functional.transcripts.fasta.gz exist in the release folder (should be true for all mammals)
+no
+if not (for most non-mammalian genome assemblies)
+
+AUTHORS: DNA Zoo Consortium (www.dnazoo.org)
+
+ADDRESS: www.dnazoo.org
+
+SUBMISSION_TOOL: webin-cli
+
+SUBMISSION_TOOL_VERSION: -
+
+FASTA:
+
+FLATFILE:
+
+AGP:
+
+CHROMOSOME_LIST: HiC_scaffolds_1, HiC_scaffold_2... HiC_scaffold_n where n is the number of chromosomes listed in the README karyotype (chromlengthAssembly -> karyotype)
+
+UNLOCALISED_LIST: all other HiC scaffolds
+
+####################################################################################################
