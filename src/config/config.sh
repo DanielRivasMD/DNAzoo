@@ -28,9 +28,10 @@ docDir="${projDir}/doc"
 
 # uploads
 uploadsDir="${projDir}/uploads"
+externalDir="/Volumes/G/DNAzoo/uploads"
 
-fastaDir="${uploadsDir}/fasta"
-fastqDir="${uploadsDir}/fastq"
+fastaDir="${externalDir}/fasta"
+fastqDir="${externalDir}/fastq"
 manifestDir="${uploadsDir}/manifest"
 reportDir="${uploadsDir}/report"
 
