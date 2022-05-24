@@ -10,3 +10,7 @@ doc/accounts.txt
 # conceil password
 uploads/.password.txt
 src/ENApassword.sh
+
+# fasta directories
+uploads/fasta
+uploads/fastq
