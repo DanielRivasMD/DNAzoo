@@ -17,8 +17,8 @@ _default:
 
 ####################################################################################################
 
-# run convert for script
+# fastq => fasta
 fastqConvert:
-  source src/utilities/fastqConvert.sh
+  source src/preprocess/fastqConvert.sh
 
 ####################################################################################################

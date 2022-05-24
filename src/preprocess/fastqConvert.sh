@@ -8,16 +8,16 @@ source "${HOME}/Factorem/DNAzoo/src/config/config.sh"
 
 ####################################################################################################
 
-for ƒ in $(command ls "${fastqDir}" )
+for file in $( command ls "${fastqDir}" )
 do
 
   # log
-  echo "${ƒ}"
+  echo "${file}"
 
   # decompress, convert & recompress
-  gzip --keep --decompress "${fastqDir}/${ƒ}" | \
+  gzip --keep --decompress "${fastqDir}/${file}" | \
   awk -f "${utilDir}/fastqConvert.awk" - | \
-  gzip - > "${fastaDir}/${ƒ/fastq/fasta}"
+  gzip - > "${fastaDir}/${file/fastq/fasta}"
 
 done
 
