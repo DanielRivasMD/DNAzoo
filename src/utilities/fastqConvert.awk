@@ -9,9 +9,10 @@ BEGIN{
 ####################################################################################################
 
 {
-  if (NR%4 == 1) {
+  # idenfity lines in reference to multiples of 4
+  if ( NR % 4 == 1 ) {
     printf(">%s\n", substr($0, 2));
-  } else if (NR%4 == 2) {
+  } else if ( NR % 4 == 2 ) {
     print
   };
 }
