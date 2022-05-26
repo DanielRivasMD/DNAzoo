@@ -22,3 +22,9 @@ _default:
   source src/preprocess/fastqConvert.sh
 
 ####################################################################################################
+
+# collect scaffolds
+@collectScaffolds:
+  source src/preprocess/collectScaffolds.sh
+
+####################################################################################################
