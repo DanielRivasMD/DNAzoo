@@ -13,8 +13,8 @@ AUTHORS DNA Zoo Consortium (www.dnazoo.org)
 ADDRESS www.dnazoo.org
 SUBMISSION_TOOL webin-cli
 SUBMISSION_TOOL_VERSION 4.3.0
-FASTA SRR8616946_1.fastq.gz,SRR8616946_2.fastq.gz,SRR8616947_1.fastq.gz,SRR8616947_2.fastq.gz
+FASTA uploads/assembly/me-1k.fasta.gz
 FLATFILE FLATFILE
 AGP AGP
-CHROMOSOME_LIST CHROMOSOME_LIST
-UNLOCALISED_LIST UNLOCALISED_LIST
+CHROMOSOME_LIST uploads/chrList/me-1k.txt
+UNLOCALISED_LIST uploads/unlocList/me-1k.txt
