@@ -16,7 +16,8 @@ do
 
   # decompress, convert & recompress
   zmore "${assemblyDir}/${file}" | \
-  awk -f "${utilDir}/collectScaffolds.awk" - > "${chrList}/${file/.fasta.gz/}.txt"
+  awk -f "${utilDir}/collectScaffolds.awk" - | \
+  gzip - > "${chrList}/${file/.fasta/}"
 
 done
 
