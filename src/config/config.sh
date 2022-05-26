@@ -33,6 +33,10 @@ externalDir="/Volumes/G/DNAzoo/uploads"
 
 fastaDir="${externalDir}/fasta"
 fastqDir="${externalDir}/fastq"
+
+assemblyDir="${uploadsDir}/assembly"
+chrList="${uploadsDir}/chrList"
+unlocList="${uploadsDir}/unlocList"
 manifestDir="${uploadsDir}/manifest"
 reportDir="${uploadsDir}/report"
 
