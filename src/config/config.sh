@@ -12,6 +12,7 @@ srcDir="${projDir}/src"
 
 configDir="${srcDir}/config"
 preprocessDir="${srcDir}/preprocess"
+updateDir="${srcDir}/update"
 utilDir="${srcDir}/utilities"
 
 ####################################################################################################
