@@ -14,3 +14,8 @@ src/ENApassword.sh
 # fasta directories
 uploads/fasta
 uploads/fastq
+
+# assembly directories
+uploads/assembly
+uploads/chrList
+uploads/unlocList
