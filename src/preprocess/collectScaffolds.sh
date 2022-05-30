@@ -15,8 +15,7 @@ do
   echo "${file}"
 
   # decompress, convert & recompress
-  zmore "${assemblyDir}/${file}" | \
-  awk -f "${utilDir}/collectScaffolds.awk" - | \
+  bender fasta collectID --fasta <( zmore "${assemblyDir}/${file}" ) | \
   gzip - > "${chrList}/${file/.fasta/}"
 
 done
