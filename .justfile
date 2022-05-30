@@ -31,11 +31,7 @@ collectScaffolds:
   # declarations
   source .just.sh
 
-  echo "Building..."
-  go build -v -o ${proj}/excalibur/collectScaffolds ${util}/collectScaffolds.go
-
-  # ${exec}/collectScaffolds .justfile
-
-  # source src/preprocess/collectScaffolds.sh
+  # execute
+  source ${preprocess}/collectScaffolds.sh
 
 ####################################################################################################
