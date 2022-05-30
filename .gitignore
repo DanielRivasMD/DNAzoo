@@ -19,3 +19,6 @@ uploads/fastq
 uploads/assembly
 uploads/chrList
 uploads/unlocList
+
+# deprecated scripts
+src/deprecated
