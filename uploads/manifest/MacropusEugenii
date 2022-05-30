@@ -14,7 +14,4 @@ ADDRESS www.dnazoo.org
 SUBMISSION_TOOL webin-cli
 SUBMISSION_TOOL_VERSION 4.3.0
 FASTA uploads/assembly/me-1k.fasta.gz
-FLATFILE FLATFILE
-AGP AGP
-CHROMOSOME_LIST uploads/chrList/me-1k.txt
-UNLOCALISED_LIST uploads/unlocList/me-1k.txt
+CHROMOSOME_LIST uploads/chrList/me-1k.gz
