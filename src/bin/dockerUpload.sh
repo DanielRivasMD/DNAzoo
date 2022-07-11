@@ -8,7 +8,7 @@
 docker run \
   --rm \
   --volume ~/Factorem/DNAzoo/uploads:/uploads \
-  --env JAVA_TOOLS_OPTIONS-"-Xms8G" enasequence/webin-cli \
+  --env JAVA_TOOLS_OPTIONS-"-Xms8G Xmx8G" enasequence/webin-cli \
     -context=genome \
     -userName=Webin-62042 \
     -passwordFile=uploads/.password.txt \
